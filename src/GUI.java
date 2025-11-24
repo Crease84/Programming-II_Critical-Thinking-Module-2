@@ -110,7 +110,7 @@ public class GUI {
 				double userMoney = Double.parseDouble(moneyText.getText());
 				
 				if (!myAccount.withdraw(userMoney)) {
-					JOptionPane.showMessageDialog(frame, "Insufficiant funds");
+					JOptionPane.showMessageDialog(frame, "Insufficient funds");
 				}
 				else {
 					String formatted = String.format("%.2f", myAccount.getBalance());
